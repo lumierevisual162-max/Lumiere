@@ -22,7 +22,7 @@
   #hero-text span { display:inline-block; opacity:0; transform: translateY(20px); transition: 0.5s; }
 </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-900 text-white overflow-x-hidden">
 
 <!-- Navbar -->
 <nav class="fixed w-full bg-gray-800/90 backdrop-blur z-50 flex justify-between items-center px-6 py-4">
@@ -47,7 +47,7 @@
 
 <!-- Hero -->
 <section id="hero" class="h-screen flex flex-col items-center justify-center text-center relative px-6 overflow-hidden"
-  style="background: url('images/foto1.jpg') no-repeat center center/cover;">
+  style="background: url('images/foto1.jpg') no-repeat center center/cover; background-attachment: fixed;">
   <div class="absolute inset-0 bg-black/50"></div>
   <div class="relative z-10">
     <h1 id="hero-text" class="text-5xl md:text-6xl font-bold mb-4 tracking-tight">
@@ -58,12 +58,12 @@
   </div>
 </section>
 
-<!-- Tentang dengan Slideshow -->
+<!-- Tentang -->
 <section id="tentang" class="relative py-20 flex flex-col items-center text-center px-6"
-  style="background: url('images/foto2.jpg') no-repeat center center/cover;">
+  style="background: url('images/foto2.jpg') no-repeat center center/cover; background-attachment: fixed;">
   <div class="absolute inset-0 bg-black/60"></div>
   <div class="relative z-10 w-full">
-    <div id="slideshow" class="relative w-full max-w-5xl h-96 mb-6">
+    <div id="slideshow" class="relative w-full max-w-5xl h-96 mb-6 mx-auto">
       <img src="images/01.jpg" class="active">
       <img src="images/02.jpg">
       <img src="images/03.jpg">
@@ -73,27 +73,27 @@
       <button id="next" class="absolute right-5 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">Next</button>
     </div>
 
-    <div class="flex space-x-4 mb-6">
+    <div class="flex flex-wrap justify-center gap-4 mb-6">
       <img data-index="0" src="images/01.jpg" class="thumbnail active w-24 h-16 object-cover">
       <img data-index="1" src="images/02.jpg" class="thumbnail w-24 h-16 object-cover">
       <img data-index="2" src="images/03.jpg" class="thumbnail w-24 h-16 object-cover">
       <img data-index="3" src="images/04.jpg" class="thumbnail w-24 h-16 object-cover">
     </div>
 
-    <div class="max-w-3xl text-white">
+    <div class="max-w-3xl text-white mx-auto">
       <h3 class="text-3xl font-bold mb-4" data-aos="fade-up">Tentang Kami</h3>
       <p data-aos="fade-up" data-aos-delay="100">Lumiere Visual berdiri sejak 2025. Kami bergerak di bidang fotografi, videografi, dan desain grafis. Misi kami adalah membantu Anda mengabadikan momen penting dan membangun identitas visual yang kuat untuk brand atau pribadi Anda.</p>
     </div>
   </div>
 </section>
 
-<!-- Portofolio Lightbox -->
+<!-- Portofolio -->
 <section id="portofolio" class="py-20 px-6 relative"
-  style="background: url('images/foto3.jpg') no-repeat center center/cover;">
+  style="background: url('images/foto3.jpg') no-repeat center center/cover; background-attachment: fixed;">
   <div class="absolute inset-0 bg-black/70"></div>
   <div class="relative z-10">
     <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Portofolio</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
       <div class="portfolio-item" data-aos="zoom-in">
         <img src="images/05.jpg" class="w-full h-64 object-cover open-lightbox">
         <div class="portfolio-overlay">Project Fotografi 1</div>
@@ -114,9 +114,9 @@
   <img id="lightbox-img" src="">
 </div>
 
-<!-- Kontak dengan Form -->
+<!-- Kontak -->
 <section id="kontak" class="py-20 px-6 text-center relative"
-  style="background: url('images/city.jpg') no-repeat center center/cover;">
+  style="background: url('images/foto4.jpg') no-repeat center center/cover; background-attachment: fixed;">
   <div class="absolute inset-0 bg-black/80"></div>
   <div class="relative z-10">
     <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">Kontak Kami</h2>
